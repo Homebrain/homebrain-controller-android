@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.johan.homebraincontroller.DebugFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top"
+        android:longClickable="true"
+        android:weightSum="1">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="id"
+                    android:id="@+id/idtextview"
+                    android:layout_gravity="left|center" />
+                <EditText
+                    android:lines="6"
+                    android:text="lightbtn1"
+                    android:minLines="4"
+                    android:maxLines="12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/msgidtext"
+                    android:singleLine="true"
+                    android:layout_gravity="left|top"
+                    android:hint="messagetype"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="type"
+                    android:id="@+id/typetextview"
+                    android:layout_gravity="left|center" />
+                <EditText
+                    android:lines="6"
+                    android:text="button"
+                    android:minLines="4"
+                    android:maxLines="12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/msgtypetext"
+                    android:singleLine="true"
+                    android:layout_gravity="left|top"
+                    android:hint="messagetype"
+                    android:layout_weight="1" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Content"
+                    android:id="@+id/ipText"
+                    android:layout_gravity="left|center" />
+                <EditText
+                    android:lines="6"
+                    android:text='{"action":"pressed"}'
+                    android:minLines="4"
+                    android:maxLines="12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/msgdatatext"
+                    android:singleLine="true"
+                    android:layout_gravity="left|top"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:id="@+id/sendbutton"
+                android:layout_gravity="left|top" />
+        </TableLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
